@@ -1,0 +1,346 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+.section .container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.section:nth-child(2n) {
+  background-color: #e8e8e8;
+}
+
+.pic-box {
+  max-width: 50%;
+  height: 100%;
+}
+
+.pic-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info {
+  position: absolute;
+  width: 40%;
+  top: 18%;
+  right: 0;
+  text-align: center;
+}
+
+.info .name {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  padding: 10px 40px;
+  background-color: #313233;
+  color: #f1f1f1;
+  font-weight: 300;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.info .name:after {
+  content: 'Ian Tsai';
+  width: 40%;
+  background-color: #efd856;
+  color: #313233;
+  position: absolute;
+  bottom: -40%;
+  right: -10%;
+  font-size: 1.5rem;
+  padding: 6px 20px;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.info .box {
+  text-align: left;
+  width: 100%;
+  padding: 10px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.info .box .title {
+  font-weight: 600;
+  color: #efd856;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+}
+
+.info .box p {
+  margin: 0;
+  padding: 5px 10px;
+  font-weight: 300;
+}
+
+h2 {
+  background-color: #313233;
+  color: #f1f1f1;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.d-flex .col {
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  margin-bottom: 3rem;
+}
+
+.d-flex .col .card {
+  max-width: 300px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 23px;
+  padding-left: 50px;
+  background-color: #f1f1f1;
+  color: #313233;
+  font-family: 'Noto Sans TC', sans-serif;
+  position: relative;
+}
+
+.d-flex .col .card .icon {
+  font-size: 2rem;
+  padding: 10px 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #efd856;
+  top: -15%;
+  left: -9%;
+  text-align: center;
+}
+
+.d-flex .col .card:after {
+  content: '';
+  background-color: #efd856;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  z-index: -10;
+}
+
+.d-flex .col .card .title {
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.d-flex .col .card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.d-flex .col .card ul li {
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  color: #313233;
+}
+
+.d-flex .work {
+  width: 100%;
+  max-width: 480px;
+  font-family: 'Noto Sans TC', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.d-flex .work a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.d-flex .work a:hover .img-box {
+  opacity: .8;
+}
+
+.d-flex .work a:hover .title {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.d-flex .work a .img-box {
+  width: 100%;
+}
+
+.d-flex .work a .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.d-flex .work a .title {
+  display: inline-block;
+  color: #313233;
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: absolute;
+  z-index: 10;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.d-flex .work a .title:before {
+  content: '';
+  background-color: #efd856;
+  position: absolute;
+  padding: 10px 40px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -5;
+}
+
+.d-flex .work .intro {
+  text-align: center;
+  margin-top: 5rem;
+  color: #313233;
+  border: 2px solid #313233;
+  background-color: white;
+  padding: 0 20px;
+  position: relative;
+}
+
+.d-flex .work .intro:before {
+  content: 'MAIN POINT';
+  font-weight: 600;
+  background-color: #313233;
+  color: #f1f1f1;
+  position: absolute;
+  right: -2px;
+  top: -35px;
+  padding: 5px 10px;
+}
+
+.d-flex .work .intro p {
+  border: 1px solid #efd856;
+  padding: 5px 10px;
+  font-weight: 600;
+  display: inline-block;
+  background-color: #efd856;
+}
+
+.d-flex .work .intro ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.d-flex .work .intro ul li {
+  margin-bottom: 8px;
+  letter-spacing: 1.1px;
+}
+
+@media (max-width: 980px) {
+  .d-flex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .d-flex .col {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .d-flex .col .card {
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+  .d-flex .col .card .icon {
+    left: 50%;
+    top: -20%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 790px) {
+  .info .name {
+    font-size: 1rem;
+    margin-bottom: 3.5rem;
+  }
+  .info .name:after {
+    font-size: .7rem;
+    bottom: -100%;
+    right: 0;
+    left: 0;
+  }
+  .info .box .title {
+    margin: 5px 0;
+    font-size: .8rem;
+  }
+  .info .box p {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #fp-nav {
+    display: none;
+  }
+  .info {
+    top: 0;
+  }
+  .d-flex .col {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+.github-code {
+  margin-top: .5rem;
+  text-align: center;
+}
+
+.github-code a .btn {
+  background-color: #313233;
+  color: #f1f1f1;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.github-code a .btn:hover {
+  opacity: .8;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: #f1f1f1;
+  background-color: #313233;
+  padding: 2px 5px;
+}
+/*# sourceMappingURL=style.css.map */

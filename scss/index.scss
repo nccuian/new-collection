@@ -1,0 +1,45 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import 'config';
+@import 'navbar';
+@import 'about';
+@import 'skills';
+@import 'experience';
+@import 'work';
+
+body {
+  font-family: $zh-font;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  &:nth-child(odd) {
+    background-color: $bgc-light;
+  }
+  &:nth-child(even) {
+    background-color: $bgc-dark;
+  }
+  .tag {
+    text-transform: uppercase;
+    font-family: $en-font;
+    padding: 10px;
+    background-color: $second-color;
+    color: $white;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 3rem;
+    h3 {
+      margin: 0;
+      letter-spacing: 1.2px;
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  section {
+    .container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  } 
+}

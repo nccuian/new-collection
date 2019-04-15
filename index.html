@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Collection</title>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <ul>
+        <li><a href="#about" class="current">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#work1">work1</a>
+            <a class="dropdown-item" href="#work2">work2</a>
+            <a class="dropdown-item" href="#work3">work3</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="side-bar">
+      <ul>
+        <li><a href="#about" class="current"><span>about</span></a></li>
+        <li><a href="#skills"><span>skills</span></a></li>
+        <li><a href="#experience"><span>experience</span></a></li>
+        <li><a href="#work1"><span>work1</span></a></li>
+        <li><a href="#work2"><span>work2</span></a></li>
+        <li><a href="#work3"><span>work3</span></a></li>
+      </ul>
+    </div>
+    
+    <section id="about">
+      <div class="row m-0">
+        <div class="col-sm-6 wow slideInLeft">
+          <div class="bio-wrapper">
+            <img src="https://images.unsplash.com/photo-1536697246787-1f7ae568d89a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c87934a2a2bee8546db4747930d00370&auto=format&fit=crop&w=934&q=80" alt="ian tsai" class="portrait"/>
+          </div>
+        </div>
+        <div class="col-sm-6 wow slideInUp">
+          <div class="info-wrapper">
+            <div class="name">
+              <h3>蔡明諺</h3>
+            </div>
+            <div class="box">
+              <div class="title">Education</div>
+              <p>National Chengchi University</p>
+              <p>Japanese</p>
+              <div class="title">Email</div>
+              <p>nccuian@gmail.com</p>
+              <div class="title">Experince</div>
+              <p>dipp點譜數位 - Front-End Developer Intern</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="tag wow fadeIn" data-wow-delay=".5s"><h3>skills</h3></div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-5 wow flipInX" data-wow-delay=".2s">
+            <div class="card">
+              <div class="icon" style="padding: 10px 21.5px">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="title">HTML/CSS</div>
+              <ul>
+                <li>html5</li>
+                <li>CSS3 / SCSS</li>
+                <li>RWD</li>
+                <li>Bootstrap4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-5 wow flipInX" data-wow-delay=".5s">
+            <div class="card">
+              <div class="icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="title">javascript</div>
+              <ul>
+                <li>ES6</li>
+                <li>jQuery</li>
+                <li>AJAX</li>
+                <li>Webpack</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-5 wow flipInX" data-wow-delay=".8s">
+            <div class="card">
+              <div class="icon">
+                <i class="fab fa-vuejs"></i>
+              </div>
+              <div class="title">Front-End Framework</div>
+              <ul>
+                <li>Vue / Vuex</li>
+                <li>React / Redux</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-5 wow flipInX" data-wow-delay=".2s">
+            <div class="card">
+              <div class="icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="title">Backend</div>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Firebase / MongoDB</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-5 wow flipInX" data-wow-delay=".5s">
+            <div class="card">
+              <div class="icon" style="padding: 10px 13.5px">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="title">Others</div>
+              <ul>
+                <li>Git / Git Flow</li>
+                <li>Web crawler</li> 
+                <li>Github</li>
+                <li>heroku</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-5 wow flipInX" data-wow-delay=".8s">
+            <div class="card">
+              <div class="icon">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="title">Certificate</div>
+              <ul>
+                <li>TOEIC 800</li>
+                <li>JLPT N2</li>
+                <li>Google Analytics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="tag wow fadeIn" data-wow-delay=".5s"><h3>experience</h3></div>
+        <div class="dipp-container">
+          <div class="dipp-img">
+            <img src="./imgs/dipp.png" alt="dipp logo">
+          </div>
+          <div class="job-info">
+            <p>dipp 點譜數位有限公司</p>
+            <p>前端開發實習生</p>
+            <p>From 2018/10 to 2019/2</p>
+          </div>
+          <div class="job-description">
+            <ul>
+              <li>使用 React, Redux 開發與維護公司官網、產品平台</li>
+              <li>敏捷式團隊工作經驗</li>
+              <li>國際團隊合作經驗(俄羅斯、美國、布吉納法索)</li>
+              <li>與 PM、設計團隊討論 UI/UX, 提供更好的前端使用者體驗, 新官網上線一個月內增加超過50%會員數</li>
+              <li>整合Web API, 協助進行平台界接及整合, 與後端工程師協同合作串接 RESTful API </li>
+            </ul>
+          </div>
+          <div class="job-work">
+            <div class="work1">
+              <h3>作品 ｜ 官網連結 <i class="fas fa-caret-left"></i></h3>
+              <a href="https://withdipp.com/" target="_blank"><img src="./imgs/dipp2.png" alt="website"/></a>
+            </div>
+            <div class="mobile-show-work">
+              <div class="title">作品展示</div>
+              <a href="https://withdipp.com/">官網連結</a>
+            </div>
+            <div class="work2">
+              <h3>作品 ｜ 平台內容截圖 <i class="fas fa-caret-left"></i></h3>
+              <img src="./imgs/img1.png" alt="img"/>
+              <img src="./imgs/img2.png" alt="img"/>
+              <img src="./imgs/img3.png" alt="img"/>
+              <img src="./imgs/img4.png" alt="img"/>
+              <img src="./imgs/img5.png" alt="img"/>
+              <img src="./imgs/img6.png" alt="img"/>
+              <img src="./imgs/img7.png" alt="img"/>
+              <p><i class="fas fa-arrow-left"></i> Swipe</p>
+              <h3 class="mobile-show">平台內容截圖</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="work1">
+      <div class="container">
+        <div class="tag wow fadeIn" data-wow-delay=".5s"><h3>my work</h3></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="my-work wow rotateInUpLeft">
+              <a href="https://guarded-plains-18536.herokuapp.com/" target="_blank">
+                <div class="img-box">
+                  <img src="./imgs/yelpcamp.png" alt="yelpcamp"/>
+                </div>
+                <div class="title">Yelp Camp</div>
+              </a>
+              <div class="intro">
+                <p>Node.js + Express + MongoDB + Bootstrap</p>
+                <ul>
+                  <li><i class="fas fa-check"></i> 會員功能 - 利用 passport.js 實作完整會員功能</li>
+                  <li><i class="fas fa-check"></i> 帳戶個人頁面 - 個人頁面可供訪問、查看個人所有發布的景點</li>
+                  <li><i class="fas fa-check"></i> 留言功能 - 可在每個景點下方留言</li>
+                  <li><i class="fas fa-check"></i> RWD - 完整響應式設計</li>
+                </ul>
+              </div>
+              <div class="github-code">
+                <a href="https://github.com/nccuian/yelpcamp" target="_blank">
+                  <button type="button" class="btn">GitHub Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="my-work wow rotateInUpLeft">
+              <a href="https://nccuian.github.io/vue-store/dist/#/" target="_blank">
+                <div class="img-box">
+                  <img src="./imgs/ianstore.png" alt="ianstore"/>
+                </div>
+                <div class="title">Ian Store</div>
+              </a>
+              <div class="intro">
+                <p>Vue + Vue CLI + Vue Router + Firebase + Bootstrap</p>
+                <ul>
+                  <li><i class="fas fa-check"></i> SPA - 前後端分離，串接後端 api，實作 SPA</li>
+                  <li><i class="fas fa-check"></i> 前台 - 可查詢、分類、瀏覽商品，索取優惠券與下單</li>
+                  <li><i class="fas fa-check"></i> 後台 - 可管理商品、訂單、優惠券，模擬購物流程</li>
+                  <li><i class="fas fa-check"></i> 購物車 - 完整購物車功能</li>
+                  <li><i class="fas fa-check"></i> RWD - 完整響應式設計</li>
+                </ul>
+              </div>
+              <div class="github-code">
+                <a href="https://github.com/nccuian/vue-store" target="_blank">
+                  <button type="button" class="btn">GitHub Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="work2">
+      <div class="container">
+        <div class="tag wow fadeIn" data-wow-delay=".5s"><h3>my work</h3></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="my-work wow rotateInUpLeft">
+              <a href="https://nccuian.github.io/postit-wall/" target="_blank">
+                <div class="img-box">
+                  <img src="./imgs/postit.png" alt="postit"/>
+                </div>
+                <div class="title">Postit Wall</div>
+              </a>
+              <div class="intro">
+                <p>Vue + Firebase + SCSS</p>
+                <ul>
+                  <li><i class="fas fa-check"></i> 拖曳功能 - 實作便利貼可用滑鼠在螢幕上拖曳</li>
+                  <li><i class="fas fa-check"></i> Database - 串接 firebase 儲存便利貼資訊</li>
+                  <li><i class="fas fa-check"></i> 動態字體大小 - 字體大小隨著字數縮放</li>
+                </ul>
+              </div>
+              <div class="github-code">
+                <a href="https://github.com/nccuian/postit-wall" target="_blank">
+                  <button type="button" class="btn">GitHub Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="my-work wow rotateInUpLeft">
+              <a href="https://nccuian.github.io/livestreams-wall/" target="_blank">
+                <div class="img-box">
+                  <img src="./imgs/livestream.png" alt="livestream"/>
+                </div>
+                <div class="title">Live Stream Wall</div>
+              </a>
+              <div class="intro">
+                <p>Vue + jQuery + SCSS</p>
+                <ul>
+                  <li><i class="fas fa-check"></i> 第三方 api串接 - 利用 axios 套件串接 Twitch api</li>
+                  <li><i class="fas fa-check"></i> 無限滾動 - 下拉便可加載更多直播</li>
+                  <li><i class="fas fa-check"></i> 篩選功能 - 可篩選語言與遊戲</li>
+                  <li><i class="fas fa-check"></i> RWD - 純手刻完整響應式設計</li>
+                </ul>
+              </div>
+              <div class="github-code">
+                <a href="https://github.com/nccuian/livestreams-wall" target="_blank">
+                  <button type="button" class="btn">GitHub Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work3">
+      <div class="container">
+        <div class="tag wow fadeIn" data-wow-delay=".5s"><h3>my work</h3></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="my-work wow rotateInUpLeft">
+              <a href="https://nccuian.github.io/menu_search/client/index.html" target="_blank">
+                <div class="img-box">
+                  <img src="./imgs/menu_search.png" alt="menu-search"/>
+                </div>
+                <div class="title">LA Foody</div>
+              </a>
+              <div class="intro">
+                <p>Web crawler + Vue + Bootswatch + Firebase</p>
+                <ul>
+                  <li><i class="fas fa-check"></i> 網站爬蟲 - 使用爬蟲技術將網站上的菜單資料存放到資料庫</li>
+                  <li><i class="fas fa-check"></i> 串接資料庫搜尋 - 實作在所有餐廳的菜單中搜尋特定美食</li>
+                  <li><i class="fas fa-check"></i> RWD - 完整響應式設計</li>
+                </ul>
+              </div>
+              <div class="github-code">
+                <a href="https://github.com/nccuian/menu_search" target="_blank">
+                  <button type="button" class="btn">GitHub Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="my-work wow rotateInUpLeft">
+              <a href="https://nccuian.github.io/lottery-machine/" target="_blank">
+                <div class="img-box">
+                  <img src="./imgs/lottery.png" alt="lottery"/>
+                </div>
+                <div class="title">抽獎機</div>
+              </a>
+              <div class="intro">
+                <p>Vue + SCSS</p>
+                <ul>
+                  <li><i class="fas fa-check"></i> 實作隨機抽獎機功能</li>
+                  <li><i class="fas fa-check"></i> RWD - 純手刻完整響應式設計</li>
+                </ul>
+              </div>
+              <div class="github-code">
+                <a href="https://github.com/nccuian/lottery-machine" target="_blank">
+                  <button type="button" class="btn">GitHub Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

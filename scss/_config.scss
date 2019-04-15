@@ -1,0 +1,23 @@
+$bgc-dark: #e8e8e8;
+$bgc-light: #f3f3f3;
+$white: #f1f1f1;
+$second-color: #313233;
+$main-color: #efd856;
+$en-font: 'Lato', sans-serif;
+$zh-font: 'Noto Sans TC', sans-serif;
+
+@mixin easeHover {
+  transition: all .5s ease-out;
+  &:hover {
+    opacity: .8;
+    text-decoration: none;
+  }
+}
+@mixin flex-center($justify, $align) {
+  display: flex;
+  justify-content: center-what($justify);
+  align-items: center-what($align);
+}
+@function center-what($what) {
+  @return $what
+}

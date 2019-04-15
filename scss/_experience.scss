@@ -1,0 +1,271 @@
+#experience {
+  @include flex-center(center, center);
+  .dipp-container {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    'dipp-img info work work'
+    'desc desc work work';
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: -5px 5px 5px rgba(0,0,0,.5);
+    color: $second-color;
+    // padding: 40px;
+    border: 2px solid rgba(49, 50, 51, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    .dipp-img {
+      grid-area: dipp-img;
+      padding: 40px 0 0 0;
+      @include flex-center(center, center);
+      img {
+        width: 50%;
+        object-fit: cover;
+      }
+    }
+    .job-info {
+      grid-area: info;
+      flex-direction: column;
+      letter-spacing: 1.1px;
+      padding: 40px 0 0 0;
+      @include flex-center(center, start);
+    }
+    .job-description {
+      grid-area: desc;
+      padding: 70px 0 0 40px;
+      ul {
+        padding: 0;
+        li {
+          margin-bottom: 20px;
+          letter-spacing: 1.1px;
+        }
+      }
+    }
+    .job-work {
+      grid-area: work;
+      padding: 20px;
+      white-space: nowrap;
+      .title {
+        display: inline-blcok;
+        width: 150px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: $second-color;
+        color: $white;
+        padding: 10px 0;
+        font-size: 1.2rem;
+        letter-spacing: 1.2px;
+      }
+      .mobile-show-work {
+        display: none;
+      }
+      .work1 {
+        padding-bottom: 100%;
+        background-color: lighten($white, 2);
+        // border: 1px solid rgba(0,0,0,.3);
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        transform: translateX(25%);
+        transition: all .5s ease-out;
+        h3 {
+          position: absolute;
+          top: 0;
+          left: -31px;
+          margin: 0;
+          background-color: $white;
+          border: 2px solid $second-color;
+          z-index: 2;
+          writing-mode: vertical-lr;
+          font-size: 1.3rem;
+          padding: 2px;
+          i {
+            transition: all .3s;
+          }
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+        @include easeHover;
+        &:hover {
+          transform: translateX(-40%);
+          i {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .work2 {
+        padding-bottom: 100%;
+        background-color: rgba(0,0,0,.5);
+        position: relative;
+        width: 200%;
+        display: inline-block;
+        z-index: 2;
+        transform: translateX(-20%);
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        transition: all .5s ease-out;
+        &:hover {
+          transform: translateX(-90%);
+          h3 i {
+            transform: rotate(180deg);
+          }
+        }
+        h3 {
+          position: absolute;
+          top: 0;
+          margin: 0;
+          background-color: $white;
+          border: 2px solid $second-color;
+          writing-mode: vertical-lr;
+          font-size: 1.3rem;
+          padding: 2px;
+          i {
+            transition: all .3s;
+          }
+          &.mobile-show {
+            display: none;
+          }
+        }
+        p {
+          position: absolute;
+          bottom: 10px;
+          left: 20px;
+          color: $white;
+          // text-decoration: underline;
+          font-family: 'Fredoka One', cursive;
+          animation: swipe 1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-out;
+        }
+        img {
+          position: absolute;
+          width: 80%;
+          max-width: 400px;
+          height: 80%;
+          top: 50%;
+          object-fit: contain;
+          transform: translateY(-50%);
+        }
+        img:nth-child(1) {
+          left: 0;
+        }
+        img:nth-child(2) {
+          left: 450px;
+        }
+        img:nth-child(3) {
+          left: 900px;
+        }
+        img:nth-child(4) {
+          left: 1350px;
+        }
+        img:nth-child(5) {
+          left: 1800px;
+        }
+        img:nth-child(6) {
+          left: 2250px;
+        }
+        img:nth-child(7) {
+          left: 2700px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  #experience {
+    .dipp-container {
+      grid-template-areas: 
+      'dipp-img info'
+      'desc desc'
+      'work work';
+      grid-template-columns: repeat(2, 1fr);
+      .job-work {
+        .work1, .work2{
+          width: 50%;
+          padding-bottom: 50%;
+          transform: translateX(0);
+          h3 {
+            font-size: 1rem;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        .work1 {
+          &:hover {
+            transform: translateX(0);
+          }
+        }
+        .work2 {
+          width: 100%;
+          &:hover {
+            transform: translateX(-52%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  #experience {
+    .dipp-container {
+      .job-work {
+        .mobile-show-work {
+          text-align: center;
+          margin-bottom: 10px;
+          display: block;
+          .title {
+            padding: 3px 8px;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+          }
+          a {
+            display: inline-block;
+            border: 2px solid $second-color;
+            background-color: $white;
+            color: $second-color;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0px;
+            width: 150px;
+          }
+        }
+        .work1 {
+          display: none;
+        }
+        .work2 {
+          h3 {
+            top: 0;
+            transform: unset;
+            writing-mode: unset;
+            display: none;
+            &.mobile-show {
+              display: block;
+            }
+          }
+          &:hover {
+            transform: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes swipe{
+  from {
+    transform: translateX(10%);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
